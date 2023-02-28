@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #0F4C5C;
+}
+
+h1 {
+    margin: 0;
+}
+
+/*Cuerpo*/
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Menu*/
+nav {
+    background-color: #0077B5;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav>ul {
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, .7);
+    border-right: 1px solid rgba(0, 0, 0, .7);
+    border-radius: 2px;
+}
+
+nav ul li a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    background: #ffff;
+    color: #0000a0a0;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+/*Seccion*/
+section {
+    font: 1.9em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-src {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#miVideo {
+    width: 100px;
+    height: 15rem;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    opacity: 0.8;
+}
+
+#miVideo:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 2px 2px 5px #ccc;
+
+}
+
+#miUbicacion {
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #ccc;
+    opacity: 1;
+}
+
+#miUbicacion:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    opacity: 1;
+    border: none;
+}
+
+span {
+    text-align: start;
+    margin: 0 50px;
+}
+
+/*imagen*/
+.img-wraper {
+    width: 200px;
+}
+
+#mi-imagen {
+    width: 100%;
+    height: auto;
+}
+
+#mi-imagen:hover {
+    transform: rotate(5deg);
+    transition: 2s;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 650px) {
+
+    nav,
+    section {
+        font-size: 12px;
+    }
+
+    nav>ul {
+        width: 7rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 4px;
+        padding: 4px;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: black;
+    }
+
+    .img-wraper {
+        width: 200px;
+    }
+
+    #mi-imagen {
+        content: url(/practica9/src/perfil.jpg);
+        /* Cambia la imagen para pantallas pequeñas */
+    }
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    background-color: #dddddddd;
+}
+
+
+
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin {
+    font-size: 22px;
+    color: #3b5998;
+    text-decoration: none;
+    /* Facebook Blue */
+}
+
+.fa-instagram {
+    color: #c13584;
+    /* Instagram Pink */
+}
+
+.fa-linkedin {
+    color: #0077b5;
+    /* LinkedIn Blue */
+}
+
+.logos {
+    width: 5%;
+}
+
+.logoT {
+    padding: 10px;
+    margin: 0;
+}
+
+.logoT:hover {
+    background-color: #cacacaca;
+}
+
+/*responsive*/
